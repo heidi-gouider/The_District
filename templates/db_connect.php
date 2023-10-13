@@ -3,12 +3,18 @@
 //le bloc try-catch permet de gérer les erreurs
 // je definie les constantes pour ma connexion à la base de donnée
 $servername = "localhost";
-$dbname = "heidi";
+$dbname = "the_district_creation";
 $username = "heidi";
-$password = "1234"; // serait il préférable de cacher le mot de passe ici ?
+$password = "ra#tro"; // serait il préférable de cacher le mot de passe ici ?
+
+$dbnameInline = "heidi";
+$username = "heidi";
+$passwordInline = "1234"; // serait il préférable de cacher le mot de passe ici ?
+
 try {
     // Établir une connexion à la base de données MySQL en utilisant une instance d'une classe PDO
-    $db = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
+    // $db = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
+        $db = new PDO("mysql:host=$servername;dbname=$dbnameInline;charset=utf8", $username, $passwordInline);
 
     // Configurer le mode de gestion des erreurs de PDO pour générer des exceptions en cas d'erreurs
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
