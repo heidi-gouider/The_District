@@ -11,7 +11,7 @@
     <title><?= $title ?></title>
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="/dist/assets/index.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet"type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
